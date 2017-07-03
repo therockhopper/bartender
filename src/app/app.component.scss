@@ -46,6 +46,18 @@
       span {
         color: color("green", 30);
       }
+
+      &:nth-of-type(2) {
+        display: flex;
+        text-align: center;
+
+        input {
+          max-width: 50%;
+          text-align: center;
+          color: #000;
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 

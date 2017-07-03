@@ -25,11 +25,16 @@ export class AppComponent {
     }
     this.grandTotal = (this.numberOfImport * this.importPrice) + (this.numberOfDomestic * this.domesticPrice )
     this.commonBill = this.getCommonBill()
-    this.commonBillRemainder = this.commonBill - this.grandTotal
+    this.commonBillRemainder = this.getRemainder()
   }
 
   setCommonBill(bill:number= 0): void {
     this.commonBill = bill 
+    this.commonBillRemainder = this.getRemainder()
+  }
+
+  getRemainder(): number{
+    return this.commonBill - this.grandTotal
   }
 
   getCommonBill(): number {
