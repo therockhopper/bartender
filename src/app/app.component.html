@@ -5,8 +5,8 @@
   <div class="main">
     <div class="domestic">
       <div class="label">
-        <h3>Domestic </h3>
-        <span>x{{ numberOfDomestic }}</span>
+        <p>beer, wine, vodka, gin</p>
+        <h3>$4.75 x {{ numberOfDomestic }}</h3>
       </div>
       <div class="buttons">
         <button class="btn-green" (click)="calculateTotal('domestic', 1)">+</button>
@@ -15,8 +15,8 @@
     </div>
     <div class="import">
       <div class="label">
-        <h3>Import</h3>
-        <span>x{{ numberOfImport }}</span>
+        <p>coolers, glen, fortress</p>
+        <h3>$6.75 x {{ numberOfImport }}</h3>
       </div>
       <div class="buttons">
         <button class="btn-green" (click)="calculateTotal('import', 1)">+</button>
@@ -25,13 +25,13 @@
     </div>
   </div>
   <div class="calc">
-    <h4> Total: <span>{{ grandTotal | currency:'CAD':true }}</span></h4>
-    <h4> 
+    <h1> Total: <span>{{ grandTotal | currency:'CAD':true }}</span></h1>
+    <div> 
       <input type="tel" [ngModel]="commonBill" (ngModelChange)="setCommonBill($event)"> 
       -
       <input type="tel" [ngModel]="grandTotal" disabled>
-    </h4>
-    <h4> Change: <span>{{ commonBillRemainder | currency:'CAD':true }}</span></h4>
+    </div>
+    <h2> Change: <span>{{ commonBillRemainder | currency:'CAD':true }}</span></h2>
   </div>
   <div class="footer">
     <button class="btn-red" (click)="clear()">Clear</button>
