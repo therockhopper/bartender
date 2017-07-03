@@ -1,16 +1,18 @@
 <div class="container">
   <div class="main">
     <div class="domestic">
-      <span>Domestic x{{ numberOfDomestic }}</span>
+      <h3>beer wine vodka gin</h3>
       <div class="buttons">
         <button class="btn-blue" (click)="calculateTotal('domestic', 1)">+</button>
+        {{ numberOfDomestic }}
         <button class="btn-red" (click)="calculateTotal('domestic', -1)" [disabled]="numberOfDomestic < 1">-</button>
       </div>
     </div>
     <div class="import">
-      <span>Import x{{ numberOfImport }}</span>
+      <h3>coolers glen fortress</h3>
       <div class="buttons">
         <button class="btn-blue" (click)="calculateTotal('import', 1)">+</button>
+        {{ numberOfImport }}
         <button class="btn-red" (click)="calculateTotal('import', -1)" [disabled]="numberOfImport < 1">-</button>
       </div>
     </div>
