@@ -6,27 +6,30 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'PlexLight';
 }
 
 html {
   font-size: 62.5%;
 }
 
-html, body {
-  height: 100%;
-  color: #212121;
+body {
+  font-size: 1.6rem;
+}
+
+.bold {
+  font-family: 'PlexBold';
+}
+
+.light {
   font-family: 'PlexLight';
-  font-size: 1.4rem;
 }
 
-h1 {
-  font-size: 2.4rem;
-}
-
-p {
-  font-size: 1.4rem;
-}
-
-li {
-  font-size: 1.4rem;
+.regular {
+  font-family: 'PLexRegular';
 }

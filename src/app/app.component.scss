@@ -14,7 +14,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - #{$navHeight});
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
 
@@ -22,6 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 1px solid #aeaeae;
     border-radius: .5rem;
 
     & > div {
@@ -35,12 +37,10 @@
 
       .label {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
-
-      h3 {
         text-align: center;
       }
     }
@@ -60,6 +60,8 @@
   .calc {
     width: 100%;
     margin: .5rem 0;
+    border: 1px solid #aeaeae;
+    border-radius: .5rem;
 
     h4 {
       text-align: center;
@@ -88,9 +90,12 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    border: 1px solid #aeaeae;
+    border-radius: .5rem;
 
     button {
       width: 100%;
+      max-width: 32rem;
       margin: 0 .35rem;
     }
   }

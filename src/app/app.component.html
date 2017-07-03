@@ -9,7 +9,7 @@
         <span>x{{ numberOfDomestic }}</span>
       </div>
       <div class="buttons">
-        <button class="btn-blue" (click)="calculateTotal('domestic', 1)">+</button>
+        <button class="btn-green" (click)="calculateTotal('domestic', 1)">+</button>
         <button class="btn-red" (click)="calculateTotal('domestic', -1)" [disabled]="numberOfDomestic < 1">-</button>
       </div>
     </div>
@@ -19,7 +19,7 @@
         <span>x{{ numberOfImport }}</span>
       </div>
       <div class="buttons">
-        <button class="btn-blue" (click)="calculateTotal('import', 1)">+</button>
+        <button class="btn-green" (click)="calculateTotal('import', 1)">+</button>
         <button class="btn-red" (click)="calculateTotal('import', -1)" [disabled]="numberOfImport < 1">-</button>
       </div>
     </div>
