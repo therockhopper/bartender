@@ -3,17 +3,17 @@
     <div class="domestic">
       <h3>beer wine vodka gin</h3>
       <div class="buttons">
-        <button class="btn-blue" (click)="calculateTotal('domestic', 1)">+</button>
-        {{ numberOfDomestic }}
         <button class="btn-red" (click)="calculateTotal('domestic', -1)" [disabled]="numberOfDomestic < 1">-</button>
+        {{ numberOfDomestic }}
+        <button class="btn-blue" (click)="calculateTotal('domestic', 1)">+</button>
       </div>
     </div>
     <div class="import">
       <h3>coolers glen fortress</h3>
       <div class="buttons">
-        <button class="btn-blue" (click)="calculateTotal('import', 1)">+</button>
-        {{ numberOfImport }}
         <button class="btn-red" (click)="calculateTotal('import', -1)" [disabled]="numberOfImport < 1">-</button>
+        {{ numberOfImport }}
+        <button class="btn-blue" (click)="calculateTotal('import', 1)">+</button>
       </div>
     </div>
   </div>
@@ -27,6 +27,7 @@
     <h4> Change: <span>{{ commonBillRemainder | currency:'CAD':true }}</span></h4>
   </div>
   <div class="footer">
-    <button class="btn-orange" (click)="clear()">Clear</button>
+    <button class="btn-red" (click)="clear()">Clear</button>
+    <button class="btn-blue" (click)="clear()">Submit</button>
   </div>
 </div>
