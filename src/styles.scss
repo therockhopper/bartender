@@ -1,4 +1,7 @@
 @import "font";
+@import "ibm-colors";
+@import "variables";
+@import "buttons";
 
 * {
   margin: 0;
@@ -11,8 +14,7 @@ html {
 
 html, body {
   height: 100%;
-  background-color: #000;
-  color: #fff;
+  color: #212121;
   font-family: 'PlexLight';
   font-size: 1.4rem;
 }

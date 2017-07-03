@@ -1,0 +1,85 @@
+.btn {
+  height: 3.2rem;
+  width: 100%;
+  max-width: 32rem;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(95%);
+  }
+
+  &:disabled {
+    filter: brightness(70%);
+    cursor: unset;
+  }
+}
+
+.btn-white {
+  @extend .btn;
+
+  color: color("cerulean", 50);
+}
+
+.btn-blue {
+  @extend .btn;
+
+  background-color: color("blue", 40);
+  color: #fff;
+}
+
+.btn-green {
+  @extend .btn;
+
+  background-color: color("green", 40);
+  color: #fff;
+}
+
+.btn-orange {
+  @extend .btn;
+
+  background-color: color("orange", 30);
+  color: #fff;
+}
+
+.btn-red {
+  @extend .btn;
+
+  background-color: color("red", 40);
+  color: #fff;
+}
+
+.btn-link {
+  @extend .btn;
+
+  background: none;
+  box-shadow: none;
+  text-align: left;
+  color: $mainBlue;
+
+  &:before {
+    content: '<';
+  }
+}
+
+.btn-nav {
+  @extend .btn;
+
+  height: calc(100% - 2px);
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: none;
+  border-bottom: 2px solid $mainBlue;
+  transition: border .15s ease-in;
+
+  &:active, &:hover, &__active {
+    border-color: #fff;
+  }
+}
