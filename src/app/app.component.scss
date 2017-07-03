@@ -1,3 +1,6 @@
+@import "../ibm-colors";
+@import "../variables";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,8 +8,6 @@
   align-items: center;
   height: 100%;
   margin: 0 1rem;
-
-  .header {}
 
   .main {
     display: flex;
@@ -27,6 +28,7 @@
 
     .buttons {
       display: flex;
+      justify-content: center;
       margin: .5rem 0;
       width: 100%;
 
@@ -42,7 +44,7 @@
       text-align: center;
 
       span {
-        color: #00FF00;
+        color: color("green", 30);
       }
     }
   }
