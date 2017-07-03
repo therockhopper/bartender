@@ -44,17 +44,19 @@
       text-align: center;
 
       span {
-        color: color("green", 30);
+        color: color("green", 50);
       }
 
       &:nth-of-type(2) {
         display: flex;
+        justify-content: center;
         text-align: center;
 
         input {
-          max-width: 50%;
+          width: 4rem;
           text-align: center;
           color: #000;
+          border: none;
           font-size: 1.4rem;
         }
       }

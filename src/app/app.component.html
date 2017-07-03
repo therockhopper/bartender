@@ -17,8 +17,12 @@
   </div>
   <div class="calc">
     <h4> Total: <span>{{ grandTotal | currency:'CAD':true }}</span></h4>
-    <h4> <input type="tel" [ngModel]="commonBill" (ngModelChange)="setCommonBill($event)"> - ${{ grandTotal }} </h4>
-    <h4> Change: {{ commonBillRemainder | currency:'CAD':true }}</h4>
+    <h4> 
+      <input type="tel" [ngModel]="commonBill" (ngModelChange)="setCommonBill($event)"> 
+      -
+      <input type="tel" [ngModel]="grandTotal" disabled>
+    </h4>
+    <h4> Change: <span>{{ commonBillRemainder | currency:'CAD':true }}</span></h4>
   </div>
   <div class="footer">
     <button class="btn-orange" (click)="clear()">Clear</button>
