@@ -1,19 +1,26 @@
+<div class="header">
+  KitchenFest Bartender
+</div>
 <div class="container">
   <div class="main">
     <div class="domestic">
-      <h3>beer wine vodka gin</h3>
+      <div class="label">
+        <h3>Domestic </h3>
+        <span>x{{ numberOfDomestic }}</span>
+      </div>
       <div class="buttons">
-        <button class="btn-red" (click)="calculateTotal('domestic', -1)" [disabled]="numberOfDomestic < 1">-</button>
-        {{ numberOfDomestic }}
         <button class="btn-blue" (click)="calculateTotal('domestic', 1)">+</button>
+        <button class="btn-red" (click)="calculateTotal('domestic', -1)" [disabled]="numberOfDomestic < 1">-</button>
       </div>
     </div>
     <div class="import">
-      <h3>coolers glen fortress</h3>
+      <div class="label">
+        <h3>Import</h3>
+        <span>x{{ numberOfImport }}</span>
+      </div>
       <div class="buttons">
-        <button class="btn-red" (click)="calculateTotal('import', -1)" [disabled]="numberOfImport < 1">-</button>
-        {{ numberOfImport }}
         <button class="btn-blue" (click)="calculateTotal('import', 1)">+</button>
+        <button class="btn-red" (click)="calculateTotal('import', -1)" [disabled]="numberOfImport < 1">-</button>
       </div>
     </div>
   </div>
